@@ -1,18 +1,35 @@
 import React from 'react';
 import './Hero.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+  AOS.init({
+    duration: 400,
+    offset: 200,
+    once: false,
+    mirror: true,
+    easing: 'ease',
+    anchorPlacement: 'top-bottom'
+  });
+
   return (
     <section className="hero" id="home">
       <div className="hero__background"></div>
-      <div className="hero__announcement">
+      <div className="hero__announcement" 
+        data-aos="fade-down" 
+        data-aos-offset="200"
+      >
         <span className="hero__announcement-tag">REVIEWED ON</span>
-        <img src="/clutch-logo.svg" alt="Clutch" className="hero__announcement-logo" />
+        <img src="/brands/clutch.svg" alt="Clutch" className="hero__announcement-logo" />
         <div className="hero__rating-stars">★★★★★</div>
         <span>2K+ REVIEWS</span>
       </div>
       <div className="hero__container">
-        <div className="hero__content">
+        <div className="hero__content" 
+          data-aos="fade-up"
+          data-aos-offset="200"
+        >
           <h1 className="hero__title">
             We manage your IT,<br />so you can manage your business.
           </h1>

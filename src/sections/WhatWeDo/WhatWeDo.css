@@ -1,0 +1,165 @@
+.what-we-do {
+  padding: 8rem 1rem;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.what-we-do__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.what-we-do__header {
+  text-align: center;
+  margin-bottom: 6rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.what-we-do__subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0066FF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 102, 255, 0.08);
+  border-radius: 20px;
+}
+
+.what-we-do__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.what-we-do__description {
+  font-size: 1.125rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.what-we-do__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.what-we-do__card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid rgba(0, 102, 255, 0.08);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.04);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.what-we-do__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12);
+  border-color: rgba(0, 102, 255, 0.16);
+  background: linear-gradient(to bottom right, white, #f8fafc);
+}
+
+.what-we-do__card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.what-we-do__card-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 102, 255, 0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0066FF;
+  transition: all 0.3s ease;
+}
+
+.what-we-do__card:hover .what-we-do__card-icon {
+  background: #0066FF;
+  color: white;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.what-we-do__card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.what-we-do__card:hover .what-we-do__card-title {
+  color: #0066FF;
+}
+
+.what-we-do__card-description {
+  font-size: 0.9375rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.what-we-do__card:hover .what-we-do__card-description {
+  color: #334155;
+}
+
+@media (max-width: 1024px) {
+  .what-we-do {
+    padding: 6rem 1.5rem;
+  }
+
+  .what-we-do__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .what-we-do__header {
+    margin-bottom: 4rem;
+  }
+
+  .what-we-do__title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .what-we-do {
+    padding: 4rem 1rem;
+  }
+
+  .what-we-do__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .what-we-do__header {
+    margin-bottom: 3rem;
+  }
+
+  .what-we-do__title {
+    font-size: 2rem;
+  }
+
+  .what-we-do__description {
+    font-size: 1rem;
+  }
+} 

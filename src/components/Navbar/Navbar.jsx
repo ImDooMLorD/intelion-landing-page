@@ -15,9 +15,9 @@ const Navbar = () => {
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#industries">Industries</a></li>
+          <li><a href="#brands">Brands</a></li>
           <li><a href="#market-research">Market Research</a></li>
           <li><a href="#company">Company</a></li>
-          <li><a href="#brands">Brands</a></li>
         </ul>
         <div className="navbar__actions">
           <a href="#support" className="navbar__login">Client Support</a>
@@ -28,4 +28,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
